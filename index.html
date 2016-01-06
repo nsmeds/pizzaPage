@@ -14,23 +14,58 @@
             <h2>Fresh Hot Pizza</h2> 
         </header> 
         <nav>
-            <ul class="navbar">
-                <li class="menu"><a href="#">Menu</a>
-                    <ul class="submenu">
-                        <li>Classics</li>
-                        <li>Signatures</li>
-                        <li>Build-Your-Own</li>
+            <ul id="navbar" class="navbar">
+                <li id="menu"><a href="#">Menu</a>
+                    <ul id="pizzas" class="submenu">
+                        <li><a href="#">Classics</a></li>
+                        <li><a href="#">Signatures</a></li>
+                        <li><a href="#">Build-Your-Own</a></li>
+                        <li id="backbutton"><a href="#"><img src="svg/backbutton.svg" alt="Back" /></a></li>
                     </ul>
                 </li>
-                <li class="hours"><a href="#">Hours & Location</a></li>
-                <li class="about"><a href="#">About Us</a></li>
+                <li id="hours"><a href="#">Hours & Location</a>
+                    <div id="hoursdiv" class="submenu">
+                        <p>
+                            Mon-Fri: 11am - 9pm
+                            Sat-Sun: 10am - 10pm
+                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.106588447464!2d-76.34297388459235!3d40.803651479321914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c58cbf7eedf519%3A0x9b8566d479fffae1!2s410+Locust+Ave%2C+Aristes%2C+PA+17920!5e0!3m2!1sen!2sus!4v1451952824670" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </li>
+                    <li id="about"><a href="#">About Us</a>
+                        <div id="aboutdiv" class="submenu">
+                            <h4>Welcome to Crappy's!</h4>
+                            <p>
+                                Crappy's Pizza has been delivering steaming hot pies to greater Centralia since 1972. We pride ourselves on fresh ingredients, expert preparation and friendly service.
+                            </p>
+                            <p>
+                                Whether you're a cat-skinning carnivore or a tree-sitting vegan, we've got you covered. Check out our classic combinations and signature pies or make your own custom creation with our handy online pizza-builder. Order for dine-in, take-out or delivery with one simple click or feel free to call us at 570-CRAPPYS (570-272-7797).
+                            </p>
+                        </div>
+                </li>
             </ul>
-            <div class="subsubmenu">
+                        <div id="classics" class="subsubmenu">
                 <ul>
                     <li><a href="#">Cheese</a></li>
                     <li><a href="#">Pepperoni</a></li>
                     <li><a href="#">Veggie</a></li>
                     <li><a href="#">Hawaiian</a></li>
+                </ul>
+            </div>
+            <div id="signatures" class="subsubmenu">
+                <ul>
+                    <li><a href="#">The Nugent</a></li>
+                    <li><a href="#">The Freegan</a></li>
+                    <li><a href="#">The Carnivore</a></li>
+                    <li><a href="#">The Works</a></li>
+                </ul>
+            </div>
+            <div id="buildyourown" class="subsubmenu">
+                <ul>
+                    <li><a href="#">Cheese</a></li>
+                    <li><a href="#">Pepperoni</a></li>
+                    <li><a href="#">Sausage</a></li>
+                    <li><a href="#">Mushrooms</a></li>
                 </ul>
             </div>
         </nav>
@@ -48,5 +83,7 @@
                 (570) 570-5700
             </p>
         </footer>
+    
+    <script src="script.js" type="application/javascript"></script>
 </body>  
 </html>
