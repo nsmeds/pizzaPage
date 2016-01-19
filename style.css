@@ -42,22 +42,31 @@ h2 {
 
 /********** Main Navigation Styles **********/
 
-.navbar {
+#main-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu,
+.submenu,
+.subdiv {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
 }
 
-.navbar li {
-    display: flex;
-    justify-content: center;
+.menu li,
+.submenu li {
     width: 100%;
     padding-top: 5px;
 }
 
-.navbar li a {
+.menu li a,
+.submenu li a,
+.subdiv {
     display: flex;
+    justify-content: center;
     flex: 1;
     font-size: 1.5em;
     background-color: #778899;
@@ -68,9 +77,18 @@ h2 {
     transition-duration: 0.3s;
 }
 
-.navbar a:hover {
+.menu a:hover,
+.submenu a:hover {
     background-color: #8192a3;
     box-shadow: 0px 0px 1px white;
+}
+
+.subdiv {
+    justify-content: space-around;
+}
+
+.submenu, .subdiv, #back-button {
+    display: none;
 }
 
 .social li {
@@ -80,13 +98,24 @@ h2 {
     color: rgb(255,255,230);
 }
 
-#backbutton a {
-    background-color: #384047;
+#back-button {
+    align-self: center;
 }
 
-#backbutton img {
+#back-button a {
+    background-color: #384047;
+    padding: 30px;
+}
+
+#back-button img {
     width: 25px;
     height: 25px;
+}
+
+iframe {
+    border: 5px solid white;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 /********** Footer Styles **********/
@@ -122,32 +151,19 @@ footer p {
     max-width: 25px;
 }
 
-/********** Dropdown Menus **********/
-
-.submenu, .subsubmenu {
-    display: none;
-}
-
-.submenu, .subsubmenu {
-    text-align: center;
-    background-color: #778899;
-    border-radius: 5px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* Media Queries */
 
 @media (min-width: 769px) {
     
-    .navbar {
+    .menu,
+    .submenu {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
     
-    .navbar li {
+    .menu li,
+    .submenu li {
         max-width: 200px;
     }
 }

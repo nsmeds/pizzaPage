@@ -13,61 +13,83 @@
             <h1>Pizza</h1>
             <h2>Or Some Other Food</h2> 
         </header> 
-        <nav>
-            <ul id="navbar" class="navbar">
-                <li id="menu"><a href="#">Menu</a>
-                    <ul id="pizzas" class="submenu">
-                        <li id="classics-button"><a href="#">Classics</a></li>
-                        <li id="signatures-button"><a href="#">Signatures</a></li>
-                        <li id="buildyourown-button"><a href="#">Build-Your-Own</a></li>
-                    <li id="backbutton"><a href="#"><img src="svg/backbutton.svg" alt="Back" /></a></li>
-                    </ul>
-                </li>
-                <li id="hours"><a href="#">Hours & Location</a>
-                    <div id="hoursdiv" class="submenu">
-                        <p>
-                            Mon-Fri: 11am - 9pm
-                            Sat-Sun: 10am - 10pm
-                        </p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.106588447464!2d-76.34297388459235!3d40.803651479321914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c58cbf7eedf519%3A0x9b8566d479fffae1!2s410+Locust+Ave%2C+Aristes%2C+PA+17920!5e0!3m2!1sen!2sus!4v1451952824670" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                </li>
-                    <li id="about"><a href="#">About Us</a>
-                        <div id="aboutdiv" class="submenu">
-                            <h4>Welcome to a Restaurant!</h4>
-                            <p>
-                                Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch.
-                            </p>
-                            <p>
-                                Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. 
-                            </p>
-                        </div>
-                </li>
+        <nav id="main-nav">
+            <ul id="menu-top" class="menu">
+                <li id="menu-button"><a href="#">Menu</a></li>
+                <li id="hours-button"><a href="#">Hours & Location</a></li>
+                <li id="about-button"><a href="#">About Us</a></li>
             </ul>
-                        <div id="classics" class="subsubmenu">
-                <ul>
+            
+            <ul id="pizzas" class="submenu">
+                <li id="classics-button"><a href="#">Classics</a></li>
+                <li id="signatures-button"><a href="#">Signatures</a></li>
+                <li id="buildyourown-button"><a href="#">Build-Your-Own</a></li>
+            </ul>
+            
+            
+            <ul id="classics" class="submenu">
                     <li><a href="#">Cheese</a></li>
                     <li><a href="#">Pepperoni</a></li>
                     <li><a href="#">Veggie</a></li>
                     <li><a href="#">Hawaiian</a></li>
-                </ul>
-            </div>
-            <div id="signatures" class="subsubmenu">
-                <ul>
+            </ul>
+            <ul id="signatures" class="submenu">
                     <li><a href="#">The Nugent</a></li>
                     <li><a href="#">The Freegan</a></li>
                     <li><a href="#">The Carnivore</a></li>
                     <li><a href="#">The Works</a></li>
-                </ul>
-            </div>
-            <div id="buildyourown" class="subsubmenu">
-                <ul>
-                    <li><a href="#">Cheese</a></li>
+            </ul>
+            
+            <!-- need radio buttons for build-your-own menu -->
+            <ul id="build-your-own" class="submenu">
+                    <li><a href="#">Tomato Sauce</a></li>
+                    <li><a href="#">Pesto Sauce</a></li>
+                    <li><a href="#">Mozzarella</a></li>
+                    <li><a href="#">Daiya</a></li>
+                    <li><a href="#">Ricotta</a></li>
                     <li><a href="#">Pepperoni</a></li>
                     <li><a href="#">Sausage</a></li>
                     <li><a href="#">Mushrooms</a></li>
-                </ul>
-            </div>
+                    <li><a href="#">Peppers</a></li>
+                    <li><a href="#">Linguica</a></li>
+                    <li><a href="#">Olives</a></li>
+                    <li><a href="#">Ham</a></li>
+                    <li><a href="#">Pineapple</a></li>
+                    <li><a href="#">Spinach</a></li>
+                    <li><a href="#">Basil</a></li>
+                    <li><a href="#">Tomatoes</a></li>
+                    <li><a href="#">Arugula</a></li>
+                    <li><a href="#">Bacon</a></li>
+                    <li><a href="#">Artichoke Hearts</a></li>
+                    <li><a href="#">Jalapenos</a></li>
+                    <li><a href="#">Green Onions</a></li>
+                    <li><a href="#">Bear Claw</a></li>
+                    <li><a href="#">Crow Foot</a></li>
+                    <li><a href="#">Goat Horn</a></li>
+                    
+            </ul>
+            
+ 
+            <div id="hours-div" class="subdiv">
+                <p>
+                    Mon-Fri: 11am - 9pm
+                    <br>
+                    Sat-Sun: 10am - 10pm
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.106588447464!2d-76.34297388459235!3d40.803651479321914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c58cbf7eedf519%3A0x9b8566d479fffae1!2s410+Locust+Ave%2C+Aristes%2C+PA+17920!5e0!3m2!1sen!2sus!4v1451952824670" width="400" height="300"></iframe>
+            </div>           
+
+            <div id="about-div" class="subdiv">
+                    <h4>Welcome to a Restaurant!</h4>
+                    <p>
+                    Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch.
+                    </p>
+                    <p>
+                    Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. Food pizza pasta taco parmigiana waffle breakfast dinner lunch brunch. 
+                    </p>
+            </div>   
+            
+            <div id="back-button"><a href="#"><img src="svg/backbutton.svg" alt="Back" /></a></div>
         </nav>
         <footer>
             <ul class="social">
