@@ -40,6 +40,11 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
 /********** Main Navigation Styles **********/
 
 #main-nav {
@@ -48,12 +53,11 @@ h2 {
 }
 
 .menu,
-.submenu,
-.subdiv {
+.submenu {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 20px auto;
 }
 
 .menu li,
@@ -63,8 +67,7 @@ h2 {
 }
 
 .menu li a,
-.submenu li a,
-.subdiv {
+.submenu li a {
     display: flex;
     justify-content: center;
     flex: 1;
@@ -80,22 +83,23 @@ h2 {
 .menu a:hover,
 .submenu a:hover {
     background-color: #8192a3;
-    box-shadow: 0px 0px 1px white;
 }
 
 .subdiv {
-    justify-content: space-around;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    flex: 1;
+    font-size: 1em;
+    padding: 0 15px;
+    margin: 0 auto 0px auto;
+    border: 2px solid #778899;
+    border-radius: 5px;
+    max-width: 700px;
 }
 
 .submenu, .subdiv, #back-button {
     display: none;
-}
-
-.social li {
-    flex-grow: 1;
-    padding: 5px;
-    max-width: 50px;
-    color: rgb(255,255,230);
 }
 
 #back-button {
@@ -104,21 +108,51 @@ h2 {
 
 #back-button a {
     background-color: #384047;
-    padding: 30px;
+    padding: 25px;
 }
 
-#back-button img {
+#back-button svg {
     width: 25px;
     height: 25px;
+    fill: #8192a3;
+    transition-duration: 0.3s;
+}
+
+#back-button svg:hover {
+    fill: rgb(255,255,230);
 }
 
 iframe {
     border: 5px solid white;
     border-radius: 5px;
-    margin: 5px;
+    margin-bottom: 20px;
 }
 
 /********** Footer Styles **********/
+
+
+.social {
+    display: flex;
+    margin-bottom: -5px;
+    justify-content: center;
+}
+
+.social li {
+    flex-grow: 1;
+    padding: 5px;
+    max-width: 50px
+}
+
+.social svg {
+    height: 25px;
+    width: 25px;
+    fill: rgb(255,255,230);
+}
+
+.social svg:hover {
+    fill: rgba(255,255,255,0.6);
+    transition-duration: 0.3s;
+}
 
 footer {
     text-align: center;
@@ -132,23 +166,6 @@ footer p {
     font-size: 0.7em;
     padding-bottom: 0;
     margin-bottom: 1px;
-}
-
-.social {
-    display: flex;
-    margin-bottom: -5px;
-    justify-content: center;
-}
-
-.social li {
-    flex-grow: 1;
-    padding: 5px;
-    max-width: 50px;
-    color: rgb(255,255,230);
-}
-
-.social img {
-    max-width: 25px;
 }
 
 /* Media Queries */

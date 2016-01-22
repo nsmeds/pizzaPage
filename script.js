@@ -11,7 +11,7 @@ var signaturesButton = document.getElementById("signatures-button");
 var buildYourOwnButton = document.getElementById("buildyourown-button");
 var classics = document.getElementById("classics");
 var signatures = document.getElementById("signatures");
-var buildYourOwn = document.getElementById("build-your-own")
+var buildYourOwn = document.getElementById("build-your-own");
 
 menuButton.addEventListener('click', function(event) {
     menuTop.style.display = "none";
