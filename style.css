@@ -61,8 +61,8 @@ h3 {
 .submenu {
     display: flex;
     flex-wrap: wrap;
+    align-self: center;
     width: 80%;
-    margin: 0 auto 20px auto;
 }
 
 .menu li,
@@ -75,7 +75,7 @@ h3 {
 .submenu li a {
     display: flex;
     justify-content: center;
-    flex: 1;
+    flex: 1 0 auto;
     font-size: 1.5em;
     background-color: #778899;
     border-radius: 5px;
@@ -92,19 +92,31 @@ h3 {
 
 .subdiv {
     display: flex;
+    align-self: center;
     align-items: center; 
     flex-direction: column;
-    flex: 1;
+    max-width: 600px;
+    flex: 1 0 auto;
     font-size: 1em;
-    padding: 0 15px;
-    margin: 0 auto 0px auto;
+    padding: 0 20px;
     border: 2px solid #778899;
     border-radius: 5px;
     max-width: 700px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
+.subdiv h3,
 .subdiv p {
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#about-div p {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .submenu, .subdiv, #back-button {
@@ -220,6 +232,6 @@ footer p {
     }
     
     iframe {
-        margin: 10px;
+        margin-top: 20px;
     }
 }
