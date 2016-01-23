@@ -1,3 +1,8 @@
+/* To do - Add photo/columns/better readability to "About Us" 
+         - Menus more descriptive, add prices
+         - Build-your-own menu design/functionality
+*/
+
 
 * {
   box-sizing: border-box;
@@ -98,6 +103,10 @@ h3 {
     max-width: 700px;
 }
 
+.subdiv p {
+    text-align: center;
+}
+
 .submenu, .subdiv, #back-button {
     display: none;
 }
@@ -168,6 +177,21 @@ footer p {
     margin-bottom: 1px;
 }
 
+/* Keyframes */
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn .3s ease-in 1 forwards;
+}
+
+/* idea: on-click addclass fadeout? */
+
 /* Media Queries */
 
 @media (min-width: 769px) {
@@ -182,5 +206,20 @@ footer p {
     .menu li,
     .submenu li {
         max-width: 200px;
+    }
+    
+    #hours-div {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
+    }
+    
+    .subdiv h3, 
+    .subdiv p {
+        flex-direction: column;
+    }
+    
+    iframe {
+        margin: 10px;
     }
 }
