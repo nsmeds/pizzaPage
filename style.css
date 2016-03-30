@@ -75,7 +75,6 @@ h3 {
 .submenu li a {
     display: flex;
     justify-content: center;
-    flex: 1 0 auto;
     font-size: 1.5em;
     background-color: #778899;
     border-radius: 5px;
@@ -96,7 +95,6 @@ h3 {
     align-items: center; 
     flex-direction: column;
     max-width: 600px;
-    flex: 1 0 auto;
     font-size: 1em;
     padding: 0 20px;
     border: 2px solid #778899;
@@ -111,6 +109,10 @@ h3 {
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+#about-div {
+    background-color: #566676; 
 }
 
 #about-div p {
@@ -207,17 +209,17 @@ footer p {
 /* Media Queries */
 
 @media (min-width: 769px) {
-    
+
     .menu,
     .submenu {
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
+        max-width: 700px;
     }
     
     .menu li,
     .submenu li {
         max-width: 200px;
+      margin: 0 auto;
     }
     
     #hours-div {
