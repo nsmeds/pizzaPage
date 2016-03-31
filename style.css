@@ -210,30 +210,30 @@ footer p {
 
 @media (min-width: 769px) {
 
-    .menu,
-    .submenu {
-        justify-content: space-between;
-        max-width: 700px;
-    }
-    
-    .menu li,
-    .submenu li {
-        max-width: 200px;
-      margin: 0 auto;
-    }
-    
-    #hours-div {
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 1200px;
-    }
-    
-    .subdiv h3, 
-    .subdiv p {
-        flex-direction: column;
-    }
-    
-    iframe {
-        margin-top: 20px;
-    }
+.menu,
+.submenu {
+  justify-content: space-between;
+  max-width: 700px;
+}
+
+.menu li,
+.submenu li {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+#hours-div {
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+.subdiv h3,
+.subdiv p {
+  flex-direction: column;
+}
+
+iframe {
+  margin-top: 20px;
+}
 }
