@@ -1,4 +1,5 @@
 var menuTop = document.getElementById("menu-top");
+var headerH1 = document.getElementById("header-h1");
 var hoursButton = document.getElementById("hours-button");
 var menuButton = document.getElementById("menu-button");
 var aboutButton = document.getElementById("about-button");
@@ -32,6 +33,17 @@ aboutButton.addEventListener('click', function (event) {
 });
 
 backButton.addEventListener('click', function (event) {
+    menuTop.style.display = "flex";
+    hours.style.display = '';
+    about.style.display = '';
+    pizzas.style.display = '';
+    classics.style.display = '';
+    signatures.style.display = '';
+    buildYourOwn.style.display = '';
+    backButton.style.display = "flex";
+});
+
+headerH1.addEventListener('click', function (event) {
     menuTop.style.display = "flex";
     hours.style.display = '';
     about.style.display = '';

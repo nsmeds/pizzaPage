@@ -4,13 +4,13 @@
     <title>Welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" lang="en">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300|Fjalla+One|Kalam:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Fjalla+One%7CKalam:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
         <header>
-            <h1>Pizza</h1>
+            <a href="#"><h1 id="header-h1">Pizza</h1></a>
             <h2>Or Some Other Food</h2> 
         </header> 
         <nav id="main-nav">
@@ -24,9 +24,7 @@
                 <li id="classics-button"><a href="#">Classics</a></li>
                 <li id="signatures-button"><a href="#">Signatures</a></li>
                 <li id="buildyourown-button"><a href="#">Build-Your-Own</a></li>
-            </ul>
-            
-            
+            </ul>   
             <ul id="classics" class="submenu fade-in">
                     <li><a href="#">Cheese</a></li>
                     <li><a href="#">Pepperoni</a></li>
@@ -84,23 +82,22 @@
 
             <div id="about-div" class="subdiv fade-in">
                 <h3>Welcome to a Restaurant!</h3>
-                <p>
+                <p class="paragraph">
                 Pizza pasta parmigiana turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.
                 </p>
-                <p>
+                <p class="paragraph">
                 Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.
                 </p>
-                <p>
+                <p class="paragraph">
                 Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens tigernut soybean radish artichoke wattle seed endive groundnut broccoli arugula.
                 </p>
             </div>   
             
             <div id="back-button">
-                <a href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         width="25px" height="25px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-    <path d="M257.051,161V65l-224,160l224,160v-96C386.5,288.5,455.5,308.5,451.5,448.5
-        C524.5,346.5,497.5,161.5,257.051,161z"/>
-                </svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+    <path fill="#929292" d="M257.051 161V65l-224 160 224 160v-96C386.5 288.5 455.5 308.5 451.5 448.5c73-102 46-287-194.449-287.5z"/>
+</svg>
+</a>
             </div>
         </nav>
         <footer>
@@ -123,7 +120,6 @@
                 (123) 456-7890
             </p>
         </footer>
-    
-    <script src="script.js" type="application/javascript"></script>
+    <script src="script.js"></script>
 </body>  
 </html>

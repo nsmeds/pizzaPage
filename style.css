@@ -14,15 +14,16 @@ body {
     color: rgb(255,255,230);
     display: flex;
     flex-direction: column;
-}
-
-body {
     min-height: 100vh;
 }
 
 header {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
@@ -78,7 +79,6 @@ h3 {
     font-size: 1.5em;
     background-color: #778899;
     border-radius: 5px;
-    text-decoration: none;
     color: rgb(255,255,230);
     padding: 20px 20px;
     transition-duration: 0.3s;
@@ -109,6 +109,7 @@ h3 {
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #about-div {
@@ -214,6 +215,7 @@ footer p {
 .submenu {
   justify-content: space-between;
   max-width: 700px;
+  flex-wrap: nowrap;
 }
 
 .menu li,
