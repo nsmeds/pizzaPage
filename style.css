@@ -56,6 +56,7 @@ h3 {
 #main-nav {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .menu,
@@ -213,15 +214,15 @@ footer p {
 
 .menu,
 .submenu {
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 700px;
   flex-wrap: nowrap;
 }
 
 .menu li,
 .submenu li {
-  max-width: 200px;
-  margin: 0 auto;
+  min-width: 180px;
+  margin: 0 5px;
 }
 
 #hours-div {
@@ -234,6 +235,18 @@ footer p {
 .subdiv p {
   flex-direction: column;
 }
+  
+  #build-your-own {
+    max-width: 90vw;
+    flex-wrap: wrap;
+    font-family: 'Source Sans Pro', sans-serif;
+    justify-content: flex-start;
+  }
+  
+  #build-your-own li {
+    font-size: 0.8em;
+    width: 100px;
+  }
 
 iframe {
   margin-top: 20px;
